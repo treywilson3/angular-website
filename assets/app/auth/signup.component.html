@@ -1,0 +1,58 @@
+<div class="col-lg-3">
+</div>
+<div class="col-lg-6">
+    <h2 style="padding-bottom: 12px">Sign Up!</h2>
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+        <div class="form-row">
+            <div class="form-group col-lg-6" style="padding:0;">
+                <input
+                        type="text"
+                        class="form-control form-control-lg"
+                        formControlName="firstName"
+                        placeholder="First Name">
+            </div>
+            <div class="form-group col-lg-6" style="padding:0;">
+                <input
+                        type="text"
+                        class="form-control"
+                        formControlName="lastName"
+                        placeholder="Last Name">
+            </div>
+        </div>
+        <div class="form-group">
+            <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email"
+                    formControlName="email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Password"
+                    formControlName="password">
+        </div>
+        <div class="form-group col-lg-4" style="padding:0;">
+            <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Age"
+                    formControlName="age">
+        </div>
+        <div class="form-group col-lg-8" style="padding:0;">
+            <select class="form-control" formControlName="goal">
+                <option value="" selected>Your Goal</option>
+                <option>Lose Weight</option>
+                <option>Maintain Weight</option>
+                <option>Gain Mass</option>
+            </select>
+        </div>
+        <button
+                class="btn btn-primary"
+                type="submit"
+                [disabled]="!myForm.valid">Sign Up!
+        </button>
+    </form>
+</div>

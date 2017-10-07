@@ -11,16 +11,10 @@
       <li routerLinkActive="active"><a routerLink="/tools">Tools</a></li>
       <li routerLinkActive="active"><a routerLink="/recipes">Healthy Recipes</a></li>
     </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Email">
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Password">
-        </div>
-        <button type="submit" class="btn btn-default" style="margin-right: 10px">Login</button>
-      </form>
+    <ul class="nav navbar-nav navbar-right" style="margin-top: 7px">
+      <button *ngIf="!isLoggedIn()" type="submit" class="btn btn-success" routerLink="/signup">Sign Up</button>
+      <button *ngIf="!isLoggedIn()" type="submit" class="btn btn-primary" routerLink="/signin" style="margin-right: 30px">Login</button>
+      <button *ngIf="isLoggedIn()" type="submit" class="btn btn-primary" (click)="onLogout()" style="margin-right: 30px">Logout</button>
     </ul>
   </div>
 </nav>
