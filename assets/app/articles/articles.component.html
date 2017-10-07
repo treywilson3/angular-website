@@ -1,0 +1,16 @@
+ <div class="jumbotron">
+    <a href="#" class="visible-xs" data-toggle="offcanvas"><i class="fa fa-lg fa-reorder"></i></a>
+    <h1>Tons of Great Articles!</h1>
+    <p>Check them out!</p>
+  </div>
+  <div class="row">
+    <!--/span-->
+    <div class="col-6 col-sm-6 col-lg-4"
+         *ngFor="let article of articles">
+      <h2>{{article.title}}</h2>
+      <h4>By: {{article.author}}</h4>
+      <p>{{article.body}}</p>
+      <p><a class="btn btn-default" href="#">View details »</a></p>
+    </div>
+  </div>
+  <!--/row-->

@@ -1,0 +1,32 @@
+body {
+  background-color: #ffffff;
+  padding-top: 80px;
+}
+body.sidebar {
+  background-color: #ffffff;
+}
+.navbar-default {
+  background-color: #3b5998;
+  width: 100%;
+}
+/* Title */
+.navbar-default .navbar-brand {
+  color: white;
+}
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+/*
+ * Dashboard
+ */
+
+/* Placeholders */
+.placeholders {
+  padding-bottom: 3rem;
+}
+
+.placeholder img {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
