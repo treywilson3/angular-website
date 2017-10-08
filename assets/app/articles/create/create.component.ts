@@ -1,5 +1,7 @@
 import {Component, OnInit} from "@angular/core";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {Article} from "../article.model";
+import {ArticlesService} from "../articles.service";
 
 @Component({
   selector: 'app-create',
@@ -9,29 +11,25 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
 export class CreateArticlesComponent implements OnInit {
   myForm: FormGroup;
 
-  constructor() {}
+  constructor(private articlesService: ArticlesService) {}
 
   onSubmit() {
-    // const user = new User(
-    //     this.myForm.value.email,
-    //     this.myForm.value.password,
-    //     this.myForm.value.firstName,
-    //     this.myForm.value.lastName,
-    //     this.myForm.value.age,
-    //     this.myForm.value.goal
-    // );
-    // this.authService.signup(user)
-    //     .subscribe(
-    //         data => console.log(data),
-    //         error => console.error(error)
-    //     );
+    const article = new Article(
+        this.myForm.value.author,
+        this.myForm.value.title,
+        this.myForm.value.body
+    );
+    this.articlesService.create(article)
+        .subscribe(
+            data => console.log(data),
+            error => console.error(error)
+        );
     this.myForm.reset();
   }
 
   ngOnInit() {
     this.myForm = new FormGroup({
-      firstName: new FormControl(null, Validators.required),
-      lastName: new FormControl(null, Validators.required),
+      author: new FormControl(null, Validators.required),
       title: new FormControl(null, Validators.required),
       body: new FormControl(null, Validators.required)
     });

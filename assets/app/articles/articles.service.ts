@@ -1,6 +1,15 @@
 import {Article} from "./article.model";
+import { Injectable } from "@angular/core";
+import { Http, Headers, Response } from "@angular/http";
+import 'rxjs/Rx';
+import { Observable } from "rxjs";
 
+import { ErrorService } from "../errors/error.service";
+
+@Injectable()
 export class ArticlesService {
+
+  constructor(private http: Http, private errorService: ErrorService){}
 
   private articles: Article[] = [
         new Article('First', 'Mike Lewensky','Lorem Ipsum is simply dummy text of the printing and ' +
@@ -28,7 +37,14 @@ export class ArticlesService {
   getArticles(){
     return this.articles.slice();
   }
-
-
-
+  create(article: Article) {
+    const body = JSON.stringify(article);
+    const headers = new Headers({'Content-Type': 'application/json'});
+    return this.http.post('http://localhost:3000/article', body, {headers: headers})
+        .map((response: Response) => response.json())
+        .catch((error: Response) => {
+          this.errorService.handleError(error.json());
+          return Observable.throw(error.json());
+        });
+  }
 }

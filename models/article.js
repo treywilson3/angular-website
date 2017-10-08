@@ -7,6 +7,4 @@ var schema = new Schema({
   body: {type: String, required: true}
 });
 
-schema.plugin(mongooseUniqueValidator);
-
 module.exports = mongoose.model('Article', schema);
