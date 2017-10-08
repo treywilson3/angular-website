@@ -7,11 +7,11 @@
                 <h4 class="modal-title">{{ error?.title }}</h4>
             </div>
             <div class="modal-body">
-                <p>{{ error?.message }}</p>
+                <p>{{ error?.message }}</p><! -- error?.message means use error.message if it is not undefined -->
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" (click)="onErrorHandled()">Close</button>
-            </div>
+            </div>s
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->

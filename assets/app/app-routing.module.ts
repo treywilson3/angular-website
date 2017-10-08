@@ -13,6 +13,8 @@ import {LegsComponent} from "./workouts/legs/legs.component";
 import {SignupComponent} from "./auth/signup.component";
 import {SigninComponent} from "./auth/signin.component";
 
+// Keeps routes for website
+// Need to separate these at one point to have more modularity
 const appRoutes: Routes = [
   { path: '', component: LandingPageComponent},
   { path: 'articles', component: ArticlesComponent},

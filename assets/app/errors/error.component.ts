@@ -27,6 +27,7 @@ export class ErrorComponent implements OnInit {
     }
 
     ngOnInit() {
+      // change display to block bc that makes modal appear
         this.errorService.errorOccurred
             .subscribe(
                 (error: Error) => {
