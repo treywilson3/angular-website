@@ -1,12 +1,6 @@
 export class Article {
-  public title: string;
-  public author: string;
-  public body: string;
-
-  constructor(title: string, author:string, body: string){
-    this.title = title;
-    this.author = author;
-    this.body = body;
+  constructor(public author: string,
+              public title: string,
+              public body: string){
   }
-
 }

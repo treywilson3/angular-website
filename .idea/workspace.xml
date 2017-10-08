@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e27a2a7d-2e70-4d70-9153-c0e1e61790e8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/app/articles/create/create.component.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/app/app.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/app/workouts/Workout.model.ngsummary.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/app/workouts/arms/arms.component.css.shim.ngstyle.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/app/workouts/arms/arms.component.ngfactory.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/app/workouts/arms/arms.component.ngsummary.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/app/workouts/back/back.component.css.shim.ngstyle.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/app/workouts/back/back.component.ngfactory.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/app/workouts/back/back.component.ngsummary.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/app/workouts/chest/chest.component.css.shim.ngstyle.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/app/workouts/chest/chest.component.ngfactory.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/app/workouts/chest/chest.component.ngsummary.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/app/workouts/legs/legs.component.css.shim.ngstyle.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/app/workouts/legs/legs.component.ngfactory.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/app/workouts/legs/legs.component.ngsummary.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/app/workouts/shoulders/shoulders.component.css.shim.ngstyle.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/app/workouts/shoulders/shoulders.component.ngfactory.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/app/workouts/shoulders/shoulders.component.ngsummary.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/app/workouts/workouts.component.css.shim.ngstyle.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/app/workouts/workouts.component.ngfactory.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/app/workouts/workouts.component.ngsummary.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/app/workouts/workouts.service.ngsummary.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/app/app-routing.module.ts" afterPath="$PROJECT_DIR$/assets/app/app-routing.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/app/app.module.ts" afterPath="$PROJECT_DIR$/assets/app/app.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/app/articles/articles.component.html" afterPath="$PROJECT_DIR$/assets/app/articles/articles.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/app/articles/create/create.component.html" afterPath="$PROJECT_DIR$/assets/app/articles/create/create.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/app/articles/create/create.component.ts" afterPath="$PROJECT_DIR$/assets/app/articles/create/create.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/app/articles/article.model.ts" afterPath="$PROJECT_DIR$/assets/app/articles/article.model.ts" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,21 +13,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="create.component.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/app/articles/create/create.component.html">
+      <file leaf-file-name="user.model.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/app/auth/user.model.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+            <state relative-caret-position="120">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signin.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/app/auth/signin.component.html">
+      <file leaf-file-name="article.model.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/app/articles/article.model.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+            <state relative-caret-position="75">
+              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -109,6 +82,8 @@
         <option value="$PROJECT_DIR$/assets/app/app.module.ts" />
         <option value="$PROJECT_DIR$/assets/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/assets/app/articles/create/create.component.html" />
+        <option value="$PROJECT_DIR$/models/article.js" />
+        <option value="$PROJECT_DIR$/assets/app/articles/article.model.ts" />
       </list>
     </option>
   </component>
@@ -185,17 +160,7 @@
             <path>
               <item name="angular-website" type="b2602c69:ProjectViewProjectNode" />
               <item name="angular-website" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="workouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-website" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="workouts" type="462c0819:PsiDirectoryNode" />
-              <item name="arms" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="angular-website" type="b2602c69:ProjectViewProjectNode" />
@@ -344,12 +309,12 @@
       <workItem from="1507348875264" duration="578000" />
       <workItem from="1507380811159" duration="13752000" />
       <workItem from="1507415424344" duration="5248000" />
-      <workItem from="1507466192787" duration="6384000" />
+      <workItem from="1507466192787" duration="6702000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28172000" />
+    <option name="totallyTimeSpent" value="28490000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -424,13 +389,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/app/auth/logout.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@angular/core/src/metadata/lifecycle_hooks.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -453,13 +411,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/app/app-routing.module.ngsummary.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -471,13 +422,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/app/auth/user.model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -623,14 +567,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/app/articles/article.model.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -828,6 +764,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/app/articles/create/create.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/app/auth/signin.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -836,10 +780,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/app/articles/create/create.component.html">
+    <entry file="file://$PROJECT_DIR$/models/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        <state relative-caret-position="195">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/article.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/app/auth/user.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/app/articles/article.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
           <folding />
         </state>
       </provider>
