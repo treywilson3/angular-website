@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
 import {ArticlesComponent} from "./articles/articles.component";
 import {WorkoutsComponent} from "./workouts/workouts.component";
 import {LandingPageComponent} from "./landing-page/landing-page.component";
@@ -12,24 +12,35 @@ import {ShouldersComponent} from "./workouts/shoulders/shoulders.component";
 import {LegsComponent} from "./workouts/legs/legs.component";
 import {SignupComponent} from "./auth/signup.component";
 import {SigninComponent} from "./auth/signin.component";
+import {CreateArticlesComponent} from "./articles/create/create.component";
+import {ArticleHomeComponent} from "./articles/article-home.component";
 
 // Keeps routes for website
 // Need to separate these at one point to have more modularity
 const appRoutes: Routes = [
-  { path: '', component: LandingPageComponent},
-  { path: 'articles', component: ArticlesComponent},
-  { path: 'signup', component: SignupComponent},
-    { path: 'signin', component: SigninComponent},
-  { path: 'tools', component: ToolsComponent},
-  { path: 'recipes', component: RecipesComponent},
-  { path: 'workouts', component: WorkoutsComponent, children: [
-    { path: '', redirectTo: 'arms', pathMatch: 'full'},
-    { path: 'arms', component: ArmsComponent },
-    { path: 'back', component: BackComponent },
-    { path: 'chest', component: ChestComponent },
-    { path: 'shoulders', component: ShouldersComponent },
-    { path: 'legs', component: LegsComponent }
-  ]}
+  {path: '', component: LandingPageComponent},
+  {
+    path: 'articles', component: ArticleHomeComponent,
+    children: [
+      {path: '', component: ArticlesComponent},
+      {path: 'create', component: CreateArticlesComponent}
+    ]
+  },
+  {path: 'signup', component: SignupComponent},
+  {path: 'signin', component: SigninComponent},
+  {path: 'tools', component: ToolsComponent},
+  {path: 'recipes', component: RecipesComponent},
+  {
+    path: 'workouts', component: WorkoutsComponent,
+    children: [
+      {path: '', redirectTo: 'arms', pathMatch: 'full'},
+      {path: 'arms', component: ArmsComponent},
+      {path: 'back', component: BackComponent},
+      {path: 'chest', component: ChestComponent},
+      {path: 'shoulders', component: ShouldersComponent},
+      {path: 'legs', component: LegsComponent}
+    ]
+  }
 ];
 
 @NgModule({

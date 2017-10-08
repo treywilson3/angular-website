@@ -24,6 +24,8 @@ import {HttpModule} from "@angular/http";
 import {ErrorService} from "./errors/error.service";
 import {SigninComponent} from "./auth/signin.component";
 import {ErrorComponent} from "./errors/error.component";
+import {CreateArticlesComponent} from "./articles/create/create.component";
+import {ArticleHomeComponent} from "./articles/article-home.component";
 
 @NgModule({
     declarations: [
@@ -32,7 +34,9 @@ import {ErrorComponent} from "./errors/error.component";
         SignupComponent,
         SigninComponent,
         ErrorComponent,
+        ArticleHomeComponent,
         ArticlesComponent,
+        CreateArticlesComponent,
         WorkoutsComponent,
         LandingPageComponent,
         ToolsComponent,
