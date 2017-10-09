@@ -24,4 +24,20 @@ router.post('/', function (req, res, next) {
   });
 });
 
+router.get('/', function (req, res, next) {
+  Article.find()
+    .exec(function (err, articles) {
+      if (err) {
+        return res.status(500).json({
+          title: 'An error occurred',
+          error: err
+        });
+      }
+      res.status(200).json({
+        message: 'Success',
+        obj: articles
+      });
+    });
+});
+
 module.exports = router;

@@ -9,10 +9,16 @@ import {Article} from "./article.model";
 })
 export class ArticlesComponent implements OnInit {
   articles: Article[];
-  constructor(private slService: ArticlesService) { }
+
+  constructor(private articleService: ArticlesService) { }
 
   ngOnInit() {
-    this.articles = this.slService.getArticles();
+    this.articleService.getArticles()
+        .subscribe(
+            (articles: Article[]) => {
+              this.articles = articles;
+            }
+        );
   }
 
 }

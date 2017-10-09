@@ -1,5 +1,5 @@
 <div class="jumbotron">
-  <a href="#" class="visible-xs" data-toggle="offcanvas"><i class="fa fa-lg fa-reorder"></i></a>
+  <a class="visible-xs" data-toggle="offcanvas"><i class="fa fa-lg fa-reorder"></i></a>
   <h1>Tons of Great Articles!</h1>
   <p>Check them out!</p>
   <small class="form-text text-muted">Want to write an article of your own? <a routerLink="create">Click Here!</a>
@@ -9,8 +9,8 @@
   <!--/span-->
   <div class="col-6 col-sm-6 col-lg-4"
        *ngFor="let article of articles">
-    <h2>{{article.title}}</h2>
-    <h4>By: {{article.author}}</h4>
+    <h4>{{article.title}}</h4>
+    <h2>By: {{article.author}}</h2>
     <p>{{article.body}}</p>
     <p><a class="btn btn-default" href="#">View details »</a></p>
   </div>
