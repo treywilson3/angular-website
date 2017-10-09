@@ -1,4 +1,4 @@
-export class CalculateBmi {
+export class CalculateBmiClass {
   kilos: number;
   meters: number;
   squaredMeters: number;

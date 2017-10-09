@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { FormGroup, FormControl, Validators } from "@angular/forms";
-import {CalculateBmi} from "./calculate-bmi.class";
+import {CalculateBmiClass} from "./calculate-bmi.class";
 
 @Component({
   selector: 'app-bmi',
@@ -12,7 +12,7 @@ export class BmiComponent implements OnInit {
   public weight: number;
   public feet: number;
   public inches: number;
-  public bmi: CalculateBmi;
+  public bmi: CalculateBmiClass;
   public userBmi: string;
 
   constructor() {}
@@ -23,7 +23,7 @@ export class BmiComponent implements OnInit {
     this.inches = this.myForm.value.inches;
     this.myForm.reset();
 
-    this.bmi = new CalculateBmi(this.weight, this.feet, this.inches);
+    this.bmi = new CalculateBmiClass(this.weight, this.feet, this.inches);
     this.userBmi = this.bmi.calculateBMI().toFixed(2);
   }
 

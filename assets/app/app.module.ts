@@ -27,6 +27,7 @@ import {ErrorComponent} from "./errors/error.component";
 import {CreateArticlesComponent} from "./articles/create/create.component";
 import {ArticleHomeComponent} from "./articles/article-home.component";
 import {BmiComponent} from "./tools/bmi/bmi.component";
+import {CaloricIntakeComponent} from "./tools/caloric-intake/caloric-intake.component";
 
 @NgModule({
     declarations: [
@@ -42,6 +43,7 @@ import {BmiComponent} from "./tools/bmi/bmi.component";
         LandingPageComponent,
         ToolsComponent,
         BmiComponent,
+        CaloricIntakeComponent,
         RecipesComponent,
         ChestComponent,
         ShouldersComponent,
