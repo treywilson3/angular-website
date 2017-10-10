@@ -5,19 +5,23 @@ import 'rxjs/Rx';
 import { Observable } from "rxjs";
 
 import { ErrorService } from "../errors/error.service";
+import {SuccessBannerService} from "../success-banner/success-banner.service";
 
 @Injectable()
 export class ArticlesService {
 
   private articles: Article[] = [];
 
-  constructor(private http: Http, private errorService: ErrorService){}
+  constructor(private http: Http, private errorService: ErrorService, private successBannerService: SuccessBannerService){}
 
   create(article: Article) {
     const body = JSON.stringify(article);
     const headers = new Headers({'Content-Type': 'application/json'});
     return this.http.post('http://localhost:3000/article', body, {headers: headers})
-        .map((response: Response) => response.json())
+        .map((response: Response) => {
+          response.json();
+        this.successBannerService.showSuccess(response.json());
+        })
         .catch((error: Response) => {
           this.errorService.handleError(error.json());
           return Observable.throw(error.json());

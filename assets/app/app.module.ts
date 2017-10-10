@@ -28,6 +28,8 @@ import {CreateArticlesComponent} from "./articles/create/create.component";
 import {ArticleHomeComponent} from "./articles/article-home.component";
 import {BmiComponent} from "./tools/bmi/bmi.component";
 import {CaloricIntakeComponent} from "./tools/caloric-intake/caloric-intake.component";
+import {SuccessBannerComponent} from "./success-banner/success-banner.component";
+import {SuccessBannerService} from "./success-banner/success-banner.service";
 
 @NgModule({
     declarations: [
@@ -36,6 +38,7 @@ import {CaloricIntakeComponent} from "./tools/caloric-intake/caloric-intake.comp
         SignupComponent,
         SigninComponent,
         ErrorComponent,
+        SuccessBannerComponent,
         ArticleHomeComponent,
         ArticlesComponent,
         CreateArticlesComponent,
@@ -59,7 +62,7 @@ import {CaloricIntakeComponent} from "./tools/caloric-intake/caloric-intake.comp
         ReactiveFormsModule,
         HttpModule
     ],
-    providers: [ArticlesService, WorkoutsService, AuthService, ErrorService],
+    providers: [ArticlesService, WorkoutsService, AuthService, ErrorService, SuccessBannerService],
     bootstrap: [AppComponent]
 })
 export class AppModule {
