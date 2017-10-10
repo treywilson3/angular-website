@@ -38,7 +38,7 @@ export class CaloricIntakeComponent{
   ngOnInit() {
     this.myForm = new FormGroup({
       weight: new FormControl(null, Validators.required),
-      goal: new FormControl(null, Validators.required)
+      goal: new FormControl("lose_weight", Validators.required)
     });
   }
 }

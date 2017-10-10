@@ -1,7 +1,6 @@
-<div class="col-lg-3"></div>
-<div class="col-lg-6 centered">
+<div class="col-lg-6">
   <div class="panel panel-default">
-    <div class="panel-heading">Body Mass Index (BMI)</div>
+    <div class="panel-heading">Caloric Intake Recommendation</div>
     <div class="panel-body">
       <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
         <div class="form-group row">
@@ -18,11 +17,11 @@
         <div class="form-group row">
           <label for="goal" class="col-lg-2 col-form-label">Goal</label>
           <div class="col-lg-10">
-          <select class="form-control" formControlName="goal" id="goal">
-            <option selected>Lose Weight</option>
-            <option>Maintain Weight</option>
-            <option>Gain Mass</option>
-          </select>
+            <select class="form-control" formControlName="goal" id="goal">
+              <option value="lose_weight">Lose Weight</option>
+              <option value="maintain_weight">Maintain Weight</option>
+              <option value="gain_mass">Gain Mass</option>
+            </select>
           </div>
         </div>
         <button
@@ -47,5 +46,4 @@
     </div>
   </div>
 </div>
-<div class="col-lg-3"></div>
 

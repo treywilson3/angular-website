@@ -40,7 +40,7 @@ export class SignupComponent implements OnInit {
             ]),
             password: new FormControl(null, Validators.required),
             age: new FormControl(null, Validators.required),
-            goal: new FormControl(null, Validators.required)
+            goal: new FormControl("default", Validators.required)
         });
     }
 }
