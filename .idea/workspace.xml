@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e27a2a7d-2e70-4d70-9153-c0e1e61790e8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/app/auth/signin.component.html" afterPath="$PROJECT_DIR$/assets/app/auth/signin.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/app/auth/signup.component.html" afterPath="$PROJECT_DIR$/assets/app/auth/signup.component.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="signin.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="signin.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/app/auth/signin.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
@@ -23,11 +24,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.component.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="signup.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/app/auth/signup.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="4" />
+            <state relative-caret-position="60">
+              <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -81,7 +82,6 @@
         <option value="$PROJECT_DIR$/assets/app/tools/bmi/bmi.component.html" />
         <option value="$PROJECT_DIR$/assets/app/tools/caloric-intake/caloric-intake.component.html" />
         <option value="$PROJECT_DIR$/assets/app/tools/caloric-intake/caloric-intake.component.ts" />
-        <option value="$PROJECT_DIR$/assets/app/auth/signup.component.html" />
         <option value="$PROJECT_DIR$/assets/app/app.component.html" />
         <option value="$PROJECT_DIR$/assets/app/articles/create/create.component.html" />
         <option value="$PROJECT_DIR$/assets/app/errors/error.component.ts" />
@@ -104,6 +104,7 @@
         <option value="$PROJECT_DIR$/routes/user.js" />
         <option value="$PROJECT_DIR$/assets/app/articles/articles.service.ts" />
         <option value="$PROJECT_DIR$/assets/app/auth/signin.component.html" />
+        <option value="$PROJECT_DIR$/assets/app/auth/signup.component.html" />
       </list>
     </option>
   </component>
@@ -327,12 +328,12 @@
       <workItem from="1507466192787" duration="9147000" />
       <workItem from="1507511346574" duration="5039000" />
       <workItem from="1507567005429" duration="14198000" />
-      <workItem from="1507606874113" duration="7430000" />
+      <workItem from="1507606874113" duration="7502000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57602000" />
+    <option name="totallyTimeSpent" value="57674000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -825,18 +826,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/app/auth/signup.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/app/auth/signin.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/app/auth/signup.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
           <folding />
         </state>
       </provider>
