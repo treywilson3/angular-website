@@ -20,7 +20,7 @@ export class ArticlesService {
     return this.http.post('http://localhost:3000/article', body, {headers: headers})
         .map((response: Response) => {
           response.json();
-        this.successBannerService.showSuccess(response.json());
+          this.successBannerService.showSuccess(response.json());
         })
         .catch((error: Response) => {
           this.errorService.handleError(error.json());

@@ -9,6 +9,7 @@ import {SuccessBannerService} from "./success-banner.service";
 export class SuccessBannerComponent implements OnInit {
   success: SuccessBannerModel;
   display = 'none';
+  successLabel = 'Success! ';
 
   constructor(private successService: SuccessBannerService) {}
 

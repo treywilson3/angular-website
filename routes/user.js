@@ -4,7 +4,6 @@ var bcrypt = require('bcryptjs');
 var jwt = require('jsonwebtoken');
 
 var User = require('../models/user');
-
 // route invisibly has /user in front of it. So if just '/' then really /user/
 // or if /signin it is really /user/signin
 // whatever routes are used here also need to be used when calling from Service
@@ -25,7 +24,7 @@ router.post('/', function (req, res, next) {
             });
         }
         res.status(201).json({
-            message: 'User created',
+            message: 'Account created',
             obj: result
         });
     });
