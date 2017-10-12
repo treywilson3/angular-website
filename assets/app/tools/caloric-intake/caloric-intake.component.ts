@@ -23,12 +23,12 @@ export class CaloricIntakeComponent{
     this.myForm.reset();
 
     this.caloricIntake = new CaloricIntakeClass(this.weight);
-    if (this.goal === 'Cutting'){
+    if (this.goal === 'lose_weight'){
           this.caloricIntake.cuttingIntake();
-    } else if (this.goal === 'Bulking'){
-          this.caloricIntake.bulkingIntake();
-    } else {
+    } else if (this.goal === 'maintain_weight'){
           this.caloricIntake.maintaingIntake();
+    } else {
+          this.caloricIntake.bulkingIntake();
     }
     this.protein = this.caloricIntake.getProtein();
     this.carbs = this.caloricIntake.getCarbs();
