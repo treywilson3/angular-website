@@ -13,7 +13,6 @@ export class ViewArticlesComponent implements OnInit {
 
   constructor(private activatedRoute: ActivatedRoute, private articleService: ArticlesService) { }
 
-  // this is where I would used the passed id to pass into findArticle
   ngOnInit() {
     this.activatedRoute.params.subscribe((params: Params) => {
       let id = params['id'];

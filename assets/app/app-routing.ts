@@ -24,8 +24,9 @@ const appRoutes: Routes = [
     path: 'articles', component: ArticleHomeComponent,
     children: [
       {path: '', component: ArticlesComponent},
-      {path: ':id', component: ViewArticlesComponent},
-      {path: 'create', component: CreateArticlesComponent}
+      {path: 'create', component: CreateArticlesComponent},
+      {path: ':id', component: ViewArticlesComponent}
+
     ]
   },
   {path: 'signup', component: SignupComponent},
