@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e27a2a7d-2e70-4d70-9153-c0e1e61790e8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/app/app-routing.ts" afterPath="$PROJECT_DIR$/assets/app/app-routing.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/app/articles/articles.component.html" afterPath="$PROJECT_DIR$/assets/app/articles/articles.component.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,58 +14,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="caloric-intake.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/app/tools/caloric-intake/caloric-intake.component.ts">
+      <file leaf-file-name="articles.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/app/articles/articles.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="35" column="3" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+            <state relative-caret-position="285">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="caloric-intake.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/app/tools/caloric-intake/caloric-intake.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="34" column="43" lean-forward="true" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app-routing.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/app/app-routing.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workouts.routes.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/app/workouts/workouts.routes.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="articles.routes.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/app/articles/articles.routes.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#55#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -129,7 +83,6 @@
         <option value="$PROJECT_DIR$/routes/article.js" />
         <option value="$PROJECT_DIR$/assets/app/articles/articles.service.ts" />
         <option value="$PROJECT_DIR$/assets/app/articles/articles.component.spec.ts" />
-        <option value="$PROJECT_DIR$/assets/app/articles/articles.component.html" />
         <option value="$PROJECT_DIR$/assets/app/articles/articles.component.ts" />
         <option value="$PROJECT_DIR$/assets/app/articles/view-articles/view-articles.component.html" />
         <option value="$PROJECT_DIR$/public/stylesheets/styles.css" />
@@ -141,6 +94,7 @@
         <option value="$PROJECT_DIR$/assets/app/articles/articles.routes.ts" />
         <option value="$PROJECT_DIR$/assets/app/workouts/workouts.routes.ts" />
         <option value="$PROJECT_DIR$/assets/app/app-routing.ts" />
+        <option value="$PROJECT_DIR$/assets/app/articles/articles.component.html" />
       </list>
     </option>
   </component>
@@ -199,7 +153,7 @@
               <item name="angular-website" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="workouts" type="462c0819:PsiDirectoryNode" />
+              <item name="articles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="angular-website" type="b2602c69:ProjectViewProjectNode" />
@@ -350,12 +304,12 @@
       <workItem from="1507466192787" duration="9147000" />
       <workItem from="1507511346574" duration="5039000" />
       <workItem from="1507567005429" duration="14198000" />
-      <workItem from="1507606874113" duration="19013000" />
+      <workItem from="1507606874113" duration="19894000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69185000" />
+    <option name="totallyTimeSpent" value="70066000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -731,24 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/app/articles/articles.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="3" lean-forward="false" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#50#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/app/articles/articles.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -867,6 +803,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/app/articles/articles.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" column="3" lean-forward="false" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/app/workouts/workouts.routes.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -874,6 +818,14 @@
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/app/articles/articles.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
