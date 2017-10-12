@@ -6,12 +6,14 @@ import {CommonModule} from "@angular/common";
 import {ReactiveFormsModule} from "@angular/forms";
 import {ArticlesService} from "./articles.service";
 import {AppRoutingModule} from "../app-routing";
+import {ViewArticlesComponent} from "./view-articles/view-articles.component";
 
 @NgModule({
   declarations: [
     ArticleHomeComponent,
     ArticlesComponent,
-    CreateArticlesComponent
+    CreateArticlesComponent,
+    ViewArticlesComponent
   ],
   imports: [
     CommonModule,

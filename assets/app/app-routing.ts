@@ -14,6 +14,7 @@ import {SignupComponent} from "./auth/signup.component";
 import {SigninComponent} from "./auth/signin.component";
 import {CreateArticlesComponent} from "./articles/create/create.component";
 import {ArticleHomeComponent} from "./articles/article-home.component";
+import {ViewArticlesComponent} from "./articles/view-articles/view-articles.component";
 
 // Keeps routes for website
 // Need to separate these at one point to have more modularity
@@ -23,6 +24,7 @@ const appRoutes: Routes = [
     path: 'articles', component: ArticleHomeComponent,
     children: [
       {path: '', component: ArticlesComponent},
+      {path: ':id', component: ViewArticlesComponent},
       {path: 'create', component: CreateArticlesComponent}
     ]
   },

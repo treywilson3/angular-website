@@ -32,16 +32,28 @@ export class ArticlesService {
         .map((response: Response) => {
           const articles = response.json().obj;
           let transformedArticles: Article[] = [];
-          console.log(articles);
           for (let article of articles) {
             transformedArticles.push(new Article(
                 article.author,
                 article.title,
-                article.body)
+                article.body,
+                article._id)
             );
           }
           this.articles = transformedArticles;
           return transformedArticles;
+        })
+        .catch((error: Response) => {
+          this.errorService.handleError(error.json());
+          return Observable.throw(error.json());
+        });
+  }
+  findArticle(id: string) {
+    return this.http.get('http://localhost:3000/article/' + id)
+        .map((response: Response) => {
+          const article = response.json().obj;
+          let transformedArticle: Article = new Article(article.author, article.title, article.body, article._id);
+          return transformedArticle;
         })
         .catch((error: Response) => {
           this.errorService.handleError(error.json());

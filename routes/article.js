@@ -40,4 +40,19 @@ router.get('/', function (req, res, next) {
     });
 });
 
+router.get('/:id', function (req, res, next) {
+  Article.findById(req.params.id, function (err, article) {
+      if (err) {
+        return res.status(500).json({
+          title: 'An error occurred',
+          error: err
+        });
+      }
+      res.status(200).json({
+        message: 'Success',
+        obj: article
+      });
+    });
+});
+
 module.exports = router;
