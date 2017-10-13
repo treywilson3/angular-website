@@ -4,7 +4,6 @@ p {
     -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
 }
-
-button:hover .glyphicon-heart {
+.glyphicon-heart {
     color: red;
 }
