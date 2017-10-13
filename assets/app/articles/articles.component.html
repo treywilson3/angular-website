@@ -13,8 +13,15 @@
     <h4>By: {{article.author}}</h4>
     <p>{{article.body}}</p>
     <div class="col-lg-4">
-      <button type="button" class="btn btn-default">
-        <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span> Favorite
+      <button type="button" class="btn btn-default" (click)="addFavorite()"
+              (mouseenter)="hoverFavorite()"
+              (mouseleave)="removeHoverFavorite()">
+	  <span
+        class="glyphicon"
+        [class.glyphicon-heart]="favorite"
+        [class.glyphicon-heart-empty]="!favorite"
+        [style.color]="favorite ? 'red' : 'none'"
+        aria-hidden="true"></span> Favorite
       </button>
     </div>
     <div class="col-lg-4">
@@ -23,7 +30,8 @@
       </button>
     </div>
     <div class="col-lg-4">
-      <button type="button" class="btn btn-info pull-left" [routerLink]="['/articles', article.articleId]">Read More »</button>
+      <button type="button" class="btn btn-info pull-left" [routerLink]="['/articles', article.articleId]">Read More »
+      </button>
     </div>
   </div>
 </div>
