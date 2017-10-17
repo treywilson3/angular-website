@@ -6,33 +6,32 @@
   </small>
 </div>
 <div class="row">
-  <!--/span-->
   <div class="col-6 col-sm-6 col-lg-4"
        *ngFor="let article of articles">
     <h2>{{article.title}}</h2>
     <h4>By: {{article.author}}</h4>
     <p>{{article.body}}</p>
-    <div class="col-lg-4">
-      <button type="button" class="btn btn-default" (click)="addFavorite()"
-              (mouseenter)="hoverFavorite()"
-              (mouseleave)="removeHoverFavorite()">
-	  <span
-        class="glyphicon"
-        [class.glyphicon-heart]="favorite"
-        [class.glyphicon-heart-empty]="!favorite"
-        aria-hidden="true"></span> Favorite
-      </button>
-    </div>
-    <div class="col-lg-4">
-      <button type="button" class="btn btn-default">
-        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Comment
-      </button>
-    </div>
-    <div class="col-lg-4">
-      <button type="button" class="btn btn-info pull-left" [routerLink]="['/articles', article.articleId]">Read More »
-      </button>
+    <div class="row">
+      <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+        <button type="button" class="btn btn-default" (click)="addFavorite(article.articleId)"
+                (mouseenter)="hoverFavorite()"
+                (mouseleave)="removeHoverFavorite()"
+        >
+      <span class="glyphicon"
+            [ngClass]="{'glyphicon-heart-empty': !favorite,
+        'glyphicon-heart': favorite}">
+        </span> Favorite
+        </button>
+      </div>
+      <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+        <button type="button" class="btn btn-default">
+          <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Comment
+        </button>
+      </div>
+      <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+        <button type="button" class="btn btn-info" [routerLink]="['/articles', article.articleId]">Read More »
+        </button>
+      </div>
     </div>
   </div>
 </div>
-<!--/row-->
-
