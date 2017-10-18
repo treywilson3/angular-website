@@ -34,17 +34,17 @@ export class ArticlesComponent implements OnInit {
   addFavorite(articleId: string, article: any){
     // toggle full and empty heart
     article.clicked = !article.clicked;
+    let userId = localStorage.getItem('userId');
     if (article.clicked === true){
       // if clicked then add to database and show full heart
-      let userId = localStorage.getItem('userId');
-      const favorite = new Favorite(articleId, userId);
+      let favorite = new Favorite(articleId, userId);
       this.favoriteService.addFavorite(favorite)
           .subscribe(
               data => console.log(data),
               error => console.error(error)
           );
     } else { // if false then remove from database and show empty heart
-      // this.articleService.deleteFavorite(articleId)
+      // this.favoriteService.deleteFavorite(article._id)
       //     .subscribe(
       //         result => console.log(result)
       //     );

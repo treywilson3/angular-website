@@ -5,34 +5,34 @@ var jwt = require('jsonwebtoken');
 var User = require('../models/user');
 var Favorite = require('../models/favorite');
 
-// router.use('/', function (req, res, next) {
-//   jwt.verify(req.query.token, 'secret', function (err, decoded) {
-//     if (err) {
-//       return res.status(401).json({
-//         title: 'Not Authenticated',
-//         error: err
-//       });
-//     }
-//     next();
-//   })
-// });
-
-router.get('/', function (req, res, next) {
-  Favorite.find()
-    .populate('user')
-    .exec(function (err, favorites) {
-      if (err) {
-        return res.status(500).json({
-          title: 'An error occurred',
-          error: err
-        });
-      }
-      res.status(200).json({
-        message: 'Success',
-        obj: favorites
+router.use('/', function (req, res, next) {
+  jwt.verify(req.query.token, 'secret', function (err, decoded) {
+    if (err) {
+      return res.status(401).json({
+        title: 'Not Authenticated',
+        error: err
       });
-    });
+    }
+    next();
+  })
 });
+//
+// router.get('/', function (req, res, next) {
+//   Favorite.find()
+//     .populate('user')
+//     .exec(function (err, favorites) {
+//       if (err) {
+//         return res.status(500).json({
+//           title: 'An error occurred',
+//           error: err
+//         });
+//       }
+//       res.status(200).json({
+//         message: 'Success',
+//         obj: favorites
+//       });
+//     });
+// });
 
 router.post('/', function (req, res, next) {
   var decoded = jwt.decode(req.query.token);

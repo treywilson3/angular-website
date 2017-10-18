@@ -15,7 +15,10 @@ export class FavoriteService {
   addFavorite(favorite: Favorite) {
     const body = JSON.stringify(favorite);
     const headers = new Headers({'Content-Type': 'application/json'});
-    return this.http.post('http://localhost:3000/favorite', body, {headers: headers})
+    const token = localStorage.getItem('token')
+        ? '?token=' + localStorage.getItem('token')
+        : '';
+    return this.http.post('http://localhost:3000/favorite' + token, body, {headers: headers})
         .map((response: Response) => {
           const result = response.json();
           const favorite = new Favorite(
@@ -39,7 +42,8 @@ export class FavoriteService {
           for (let favorite of favorites) {
             transformedFavorites.push(new Favorite(
                 favorite.article._id,
-                favorite.user._id)
+                favorite.user._id,
+                favorite._id)
             );
           }
           this.favorites = transformedFavorites;

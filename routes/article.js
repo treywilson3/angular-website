@@ -1,28 +1,8 @@
 var express = require('express');
 var router = express.Router();
+var jwt = require('jsonwebtoken');
 
 var Article = require('../models/article');
-
-
-router.post('/', function (req, res, next) {
-  var article = new Article({
-    author: req.body.author,
-    title: req.body.title,
-    body: req.body.body
-  });
-  article.save(function(err, result) {
-    if (err) {
-      return res.status(500).json({
-        title: 'An error occurred',
-        error: err
-      });
-    }
-    res.status(201).json({
-      message: 'Article created',
-      obj: result
-    });
-  });
-});
 
 router.get('/', function (req, res, next) {
   Article.find()
@@ -54,5 +34,38 @@ router.get('/:id', function (req, res, next) {
       });
     });
 });
+
+router.use('/', function (req, res, next) {
+  jwt.verify(req.query.token, 'secret', function (err, decoded) {
+    if (err) {
+      return res.status(401).json({
+        title: 'Not Authenticated',
+        error: err
+      });
+    }
+    next();
+  })
+});
+
+router.post('/', function (req, res, next) {
+  var article = new Article({
+    author: req.body.author,
+    title: req.body.title,
+    body: req.body.body
+  });
+  article.save(function(err, result) {
+    if (err) {
+      return res.status(500).json({
+        title: 'An error occurred',
+        error: err
+      });
+    }
+    res.status(201).json({
+      message: 'Article created',
+      obj: result
+    });
+  });
+});
+
 
 module.exports = router;

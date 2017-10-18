@@ -17,7 +17,10 @@ export class ArticlesService {
   create(article: Article) {
     const body = JSON.stringify(article);
     const headers = new Headers({'Content-Type': 'application/json'});
-    return this.http.post('http://localhost:3000/article', body, {headers: headers})
+    const token = localStorage.getItem('token')
+        ? '?token=' + localStorage.getItem('token')
+        : '';
+    return this.http.post('http://localhost:3000/article' + token, body, {headers: headers})
         .map((response: Response) => {
           response.json();
           this.successBannerService.showSuccess(response.json());
